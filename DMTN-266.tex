@@ -111,7 +111,7 @@ Figure~\ref{fig:cam order 1 comp} shows the difference between the fit 6th-order
 \end{figure}
 
 \subsection{Apparent motion of objects}\label{sec:Motion}
-One of the motivations for moving to the \texttt{gbdes} package was its ability to fit proper motion and parallax. Fitting these motions is currently optional in \texttt{gbdesAstrometrifFitTask}, in order to allow for situations like fitting data that has been simulated without apparent motions, or fitting data with a very short time baseline where allowing apparent motion would add unwanted flexibility. In \texttt{gbdesAstrometricFitTask}, proper motion and parallax fitting are turned on by setting the configuration parameter \texttt{fitProperMotion=True}.
+One of the motivations for moving to the \texttt{gbdes} package \citep{2022ascl.soft10011B} was its ability to fit proper motion and parallax. Fitting these motions is currently optional in \texttt{gbdesAstrometrifFitTask}, in order to allow for situations like fitting data that has been simulated without apparent motions, or fitting data with a very short time baseline where allowing apparent motion would add unwanted flexibility. In \texttt{gbdesAstrometricFitTask}, proper motion and parallax fitting are turned on by setting the configuration parameter \texttt{fitProperMotion=True}.
 The equations for the position of an object $m$ is then
 \begin{equation}
 RA_m(t) = RA_{m, t_0} + PM_{RA, m}t + \pi \;P_{RA}(t, RA, Dec)
